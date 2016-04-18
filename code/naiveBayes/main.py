@@ -46,16 +46,16 @@ def main():
 		# # # Step 4: Calculate the Accuracy.
 		print "Accuracy..."
 		# accuracy = sum(predict_y == testY) / float(testY.size)
-		# print "Accuracy on testing : {:.2f}%".format(accuracy*100)
+		# print "Accuracy on testing : {:.2%}".format(accuracy)
 		# print "....Done...."
 		##### gammas
 		Accuracy_train[i] = sum(train_y == trainY) / float(trainY.size)
-		print "Accuracy on training : {:.2f}%".format(Accuracy_train[i]*100)
+		print "Accuracy on training : {:.2%}".format(Accuracy_train[i])
 		Accuracy_test[i] = sum(test_y == testY) / float(testY.size)
-		print "Accuracy on test : {:.2f}%".format(Accuracy_test[i]*100)
+		print "Accuracy on test : {:.2%}".format(Accuracy_test[i])
 
-	print "Total average accuracy on training: {:.2f}%".format(mean(Accuracy_train)*100)
-	print "Total average accuracy on testing: {:.2f}%".format(mean(Accuracy_test)*100)
+	print "Total average accuracy on training: {:.2%}".format(mean(Accuracy_train))
+	print "Total average accuracy on testing: {:.2%}".format(mean(Accuracy_test))
 
 if __name__ == '__main__':
 	main()
